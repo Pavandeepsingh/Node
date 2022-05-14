@@ -8,9 +8,9 @@ learning Node from https://www.udemy.com/course/nodejs-the-complete-guide/
 2. **npm start**
 
 #### Templating Engines
-1. **EJS -** syntax <p><%= name %></p>
-2. **Pug(Jade) -** syntax p #{name}
-3. **HandleBars -** syntax <p>{{name}}</p>
+1. **EJS -** syntax **<p><%= name %></p>**
+2. **Pug(Jade) -** syntax **p #{name}**
+3. **HandleBars -** syntax **<p>{{name}}</p>**
 
 #### Packages
 1. **nodemon**(dev) - run node js project continously
