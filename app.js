@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.use("/admin",adminRoutes);
+app.use("/admin",adminRoutes.routes);
 app.use(shopRoutes);
 
 app.use((req, res, next) => {
@@ -23,7 +23,9 @@ app.use((req, res, next) => {
     //             <h1>Page not found</h1>
     //             </div>`);
 
-    res.sendFile(path.join(__dirname,"views","404.html"));
+    // res.sendFile(path.join(__dirname,"views","404.html"));
+
+    res.status(404).render("404.pug",{pageTitle:"Page Not Found"})
 });
 
 app.listen(3000);
