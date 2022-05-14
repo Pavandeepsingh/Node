@@ -8,4 +8,6 @@ learning Node from https://www.udemy.com/course/nodejs-the-complete-guide/
 2. **npm start**
 
 #### Packages
-1.**nodemon**(dev) - run node js project and making changes in code
+1. **nodemon**(dev) - run node js project continously
+2. **express** - framework for node js to ease the process using middleware concept.
+3. **body-parser** - To read the upcoming body data from the req body.  
