@@ -7,7 +7,7 @@
 
     <main>
       <% if(prods.length > 0) { %>
-      <div class="grid">
+        <div class="grid">
         <% for(let product of prods) { %>
         <article class="card product-item">
           <header class="card__header">
@@ -30,8 +30,9 @@
             <button class="btn">Add to Cart</button>
           </div>
         </article>
+        <% } %>
       </div>
-      <% } %> <% } else { %>
+      <% } else { %>
       <h1>No Product Found!</h1>
       <% } %>
     </main>

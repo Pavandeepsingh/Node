@@ -26,22 +26,11 @@ const shopRoutes = require('./routes/shop');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+const errorController = require('./controllers/error')
 
-app.use("/admin",adminRoutes.routes);
+app.use("/admin",adminRoutes);
 app.use(shopRoutes);
 
-app.use((req, res, next) => {
-    // res.status(404).send(`<div style="width:100%; display:flex; justify-content:center;">
-    //             <h1>Page not found</h1>
-    //             </div>`);
-
-    // res.sendFile(path.join(__dirname,"views","404.html"));
-
-    // res.status(404).render("404.pug",{pageTitle:"Page Not Found"})
-
-    // res.status(404).render("404.hbs",{pageTitle:"Page Not Found"})
-
-    res.status(404).render("404.ejs",{pageTitle:"Page Not Found"})
-});
+app.use(errorController.get404);
 
 app.listen(3000);
