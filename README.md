@@ -22,3 +22,4 @@ learning Node from https://www.udemy.com/course/nodejs-the-complete-guide/
 3. **body-parser** - To read the upcoming body data from the req body.
 4. **ejs, pug, express-handlebars** - templating engines
 5. **mysql2** - connecting to mysql
+6. **sequelizze** - ORM for mysql
